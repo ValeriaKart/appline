@@ -30,6 +30,7 @@ public class Task5 {
                 break;
             default:
                 System.out.println("Данная операция не поддерживается.");
+                break;
         }
 
     }

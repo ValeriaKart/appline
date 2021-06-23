@@ -16,13 +16,15 @@ public class Task4 {
 
         double avgSum = (x + y + z) / 3;
 
-        System.out.println("Среднее арифретическое трех введенных чисел = " + avgSum);
+        System.out.println("Среднее арифметическое трех введенных чисел = " + avgSum);
 
+        double halfAvgSum = Math.floor(avgSum / 2);
+
+        if(halfAvgSum > 3) {
+            System.out.println("Программа выполнена корректно");
+        }
     }
-
-
-
-    }
+}
 
 
 

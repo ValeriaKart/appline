@@ -12,7 +12,7 @@ public class Task5 {
         System.out.println("Введите второе число:");
         double b = input.nextDouble();
 
-        System.out.println("Введите символ соответствующей арифметической операции +, -, *, /:");
+        System.out.println("Введите символ соответствующей арифметической операции: +, -, *, /");
         String symbol = input.next();
 
         switch(symbol) {

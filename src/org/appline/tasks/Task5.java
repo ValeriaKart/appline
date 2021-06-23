@@ -26,7 +26,7 @@ public class Task5 {
                 System.out.println(a * b);
                 break;
             case "/":
-                System.out.println(a /b);
+                System.out.println(a / b);
                 break;
             default:
                 System.out.println("Данная операция не поддерживается.");

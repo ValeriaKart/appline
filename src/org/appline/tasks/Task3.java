@@ -12,5 +12,5 @@ public class Task3 {
 
         int total = last + medium;
         System.out.println("Результат суммы первого и среднего элемента:" + total);
-        }
     }
+}

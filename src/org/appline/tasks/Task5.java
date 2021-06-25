@@ -13,20 +13,24 @@ public class Task5 {
         double b = input.nextDouble();
 
         System.out.println("Введите символ соответствующей арифметической операции: +, -, *, /");
-        String symbol = input.next();
+        char symbol = input.next().charAt(0);
 
         switch(symbol) {
-            case "+":
+            case '+':
                 System.out.println(a + b);
                 break;
-            case "-":
+            case '-':
                 System.out.println(a - b);
                 break;
-            case "*":
+            case '*':
                 System.out.println(a * b);
                 break;
-            case "/":
-                System.out.println(a / b);
+            case '/':
+                if (b == 0){
+                    System.out.println("На ноль делить нельзя!");
+                }else{
+                System.out.println(a / b);}
+
                 break;
             default:
                 System.out.println("Данная операция не поддерживается.");

@@ -9,7 +9,55 @@ public class Task6 {
         byte convertType = input.nextByte();
 
         if (convertType == 1) {
-            System.out.println("масса");
+            System.out.println("Выберите единицу измерения: 1 - килограмм, 2 - фунт, 3 - грамм, 4 - унция");
+            byte unitOfMeasurement = input.nextByte();
+
+            if(unitOfMeasurement != 1 && unitOfMeasurement != 2 && unitOfMeasurement != 3 && unitOfMeasurement != 4){
+                System.out.println("Введено некорректное значение. Корректные значения - 1, 2, 3, 4");
+            }else {
+
+                System.out.println("Введите количество выбранных единиц");
+                double quantity = input.nextDouble();
+
+                System.out.println("Результат:");
+
+                double kilos, pounds, grammes, ounces;
+
+                switch (unitOfMeasurement) {
+                    case 1:
+                        kilos = quantity;
+                        pounds = quantity * 2.2046;
+                        grammes = quantity * 1000;
+                        ounces = quantity * 35.2739;
+                        System.out.println("Килограммы: " + kilos + ",\nФунты: " + pounds + ", \nГраммы: " + grammes + ", \nУнции: " + ounces + ".");
+                        break;
+
+                    case 2:
+                        pounds = quantity;
+                        kilos = quantity * 0.4536;
+                        grammes = quantity * 453.59;
+                        ounces = quantity * 16;
+                        System.out.println("Килограммы: " + kilos + ",\nФунты: " + pounds + ", \nГраммы: " + grammes + ", \nУнции: " + ounces + ".");
+                        break;
+
+                    case 3:
+                        grammes = quantity;
+                        kilos = quantity * 0.001;
+                        pounds = quantity * 0.0022;
+                        ounces = quantity * 0.0353;
+                        System.out.println("Килограммы: " + kilos + ",\nФунты: " + pounds + ", \nГраммы: " + grammes + ", \nУнции: " + ounces + ".");
+                        break;
+
+                    case 4:
+                        ounces = quantity;
+                        kilos = quantity * 0.0283;
+                        grammes = quantity * 28.3495;
+                        pounds = quantity * 0.0625;
+                        System.out.println("Килограммы: " + kilos + ",\nФунты: " + pounds + ", \nГраммы: " + grammes + ", \nУнции: " + ounces + ".");
+                        break;
+
+                }
+            }
 
         } else if (convertType == 2){
             System.out.println("Выберите единицу измерения: 1 - метр, 2 - миля, 3 - ярд, 4 - фут");

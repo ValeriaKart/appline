@@ -8,11 +8,8 @@ public class Task7 {
     static final int Z = 7;
 
     public static void main(String[] args) {
-
         int[] myArray2 = createArray();
-
         compareToConst(myArray2);
-
     }
 
     public static int[] createArray() {

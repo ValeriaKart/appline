@@ -1,6 +1,5 @@
 package org.appline.tasks;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task9 {
@@ -18,7 +17,7 @@ public class Task9 {
         System.out.println("Введите длину массива (целое положительное число):");
         int length = input.nextInt();
         double[] array = new double[length];
-        System.out.println("Пожалуйста, введите по порядку слева направо элементы массива:");
+        System.out.println("Пожалуйста, введите по порядку слева направо элементы массива целые или десятичные числа:");
         for(int i = 0; i < length; i++) {
             array[i] = input.nextDouble();
         }

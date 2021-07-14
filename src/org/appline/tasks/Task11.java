@@ -1,6 +1,5 @@
 package org.appline.tasks;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Task11 {

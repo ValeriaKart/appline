@@ -12,7 +12,7 @@ public class Task12 {
         boolean result2 = str.startsWith("I like");
         boolean result3 = str.endsWith("!!!");
 
-        if (result1 == true && result2 == true && result3 == true) {
+        if (result1 && result2 && result3) {
             System.out.println(str.toUpperCase());
         }
         String newStr = str.replace('a', 'o');

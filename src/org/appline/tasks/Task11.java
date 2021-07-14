@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Task11 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        input.useLocale(Locale.US);
         System.out.println("Введите первое целое число:");
         String firstInput = input.next();
 

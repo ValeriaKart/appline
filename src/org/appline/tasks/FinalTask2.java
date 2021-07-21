@@ -11,7 +11,6 @@ public class FinalTask2 {
                 "(на лат. раскладке клавиатуры, обозначает неизвестное) в любом порядке." +
                 "\nНапример, x+5=7:");
         String str = input.nextLine();
-        str.matches()
 
         int i = 0;
         while(!str.contains("x") || !str.contains("+") || !str.contains("=") || str.length() != 5) {

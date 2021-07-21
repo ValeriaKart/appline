@@ -12,11 +12,9 @@ public class FinalTask2 {
                 "\nНапример, x+5=7:");
         String str = input.nextLine();
 
-        int i = 0;
         while(!str.contains("x") || !str.contains("+") || !str.contains("=") || str.length() != 5) {
             System.out.println("Уравнение не по формату. Введите уравнение в корректном формате:");
             str = input.nextLine();
-            i++;
         }
 
         int a = 0;
